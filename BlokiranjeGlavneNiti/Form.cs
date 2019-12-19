@@ -21,7 +21,7 @@ namespace Vsite.CSharp.DogađajiDelegati
         {
             textBoxTime.Text = DateTime.Now.ToLongTimeString();
         }
-
+        //sda
         private void TextBoxTime_TextChanged(object sender, EventArgs e)
         {
 
