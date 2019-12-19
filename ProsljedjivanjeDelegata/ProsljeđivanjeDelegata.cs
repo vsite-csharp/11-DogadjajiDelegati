@@ -25,19 +25,21 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static void IspisFunkcijeSinus()
         {
-            // TODO:020 Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Sin za 10 točaka u intervalu od 0 do Math.PI
+            // Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Sin za 10 točaka u intervalu od 0 do Math.PI
+            IspišiFunkciju(Math.Sin, 0, Math.PI, 10);
 
-            // TODO:021 Pokrenuti program i provjeriti ispis
+            // Pokrenuti program i provjeriti ispis
         }
 
         public static void IspisFunkcijeE()
         {
-            // TODO:022 Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Exp za 5 točaka u intervalu od 0 do 10
+            //  Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Exp za 5 točaka u intervalu od 0 do 10
+            IspišiFunkciju(Math.Exp, 0, 10, 5);
 
-            // TODO:023 Pokrenuti program i provjeriti ispis
+            //  Pokrenuti program i provjeriti ispis
         }
 
-        // TODO:024 Pokrenuti i provjeriti testove (2 testa u grupi "TestProsljeđivanjaDelegata" moraju proći).
+        //  Pokrenuti i provjeriti testove (2 testa u grupi "TestProsljeđivanjaDelegata" moraju proći).
 
         static void Main(string[] args)
         {
