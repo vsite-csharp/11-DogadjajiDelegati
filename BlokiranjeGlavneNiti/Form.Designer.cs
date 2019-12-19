@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.textBoxTime = new System.Windows.Forms.TextBox();
             this.buttonBlock = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // textBoxTime
@@ -50,6 +52,12 @@
             this.buttonBlock.TabIndex = 1;
             this.buttonBlock.Text = "&Block";
             this.buttonBlock.UseVisualStyleBackColor = true;
+            this.buttonBlock.Click += new System.EventHandler(this.ButtonBlock_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // Form
             // 
@@ -69,6 +77,7 @@
 
         private System.Windows.Forms.TextBox textBoxTime;
         private System.Windows.Forms.Button buttonBlock;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
