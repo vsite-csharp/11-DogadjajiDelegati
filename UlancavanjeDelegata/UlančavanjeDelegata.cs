@@ -32,9 +32,6 @@ namespace Vsite.CSharp.DogađajiDelegati
 
             ispisPoruke(poruke[1]);
 
-
-
-            // TODO:033 Iz delegata uklonite IspišiUFajl, pokrenite program i provjerite sadržaj datoteke "poruke.txt".
             ispisPoruke -= IspišiUFajl;
 
             ispisPoruke(poruke[2]);
