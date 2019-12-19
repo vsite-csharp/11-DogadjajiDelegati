@@ -32,7 +32,7 @@
             // 
             // EventsForm
             // 
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(305, 307);
             this.Name = "EventsForm";
             this.Load += new System.EventHandler(this.EventsForm_Load);
             this.ResumeLayout(false);
