@@ -61,6 +61,7 @@
             this.buttonDelete.TabIndex = 2;
             this.buttonDelete.Text = "&Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // buttonClose
             // 
@@ -71,6 +72,7 @@
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "E&xit";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
             // EventsForm
             // 
