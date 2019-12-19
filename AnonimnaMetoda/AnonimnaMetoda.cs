@@ -27,7 +27,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             //  Pokrenuti program i pogledati ispis.
             // Thread nit = new Thread(NitnaMetoda);
 
-            // TODO:061 Umjesto gornje naredbe u kojoj se prosljeđuje NitnaMetoda, novoj niti proslijediti anonimnu metodu definiranu pomoću delegata. Pokrenuti program i pogledati ispis.
+            //  Umjesto gornje naredbe u kojoj se prosljeđuje NitnaMetoda, novoj niti proslijediti anonimnu metodu definiranu pomoću delegata. Pokrenuti program i pogledati ispis.
             Thread nit = new Thread(()=>
             {
                 Console.WriteLine("Krenula je nova nit...");
@@ -37,7 +37,7 @@ namespace Vsite.CSharp.DogađajiDelegati
                 }
             });
 
-            // TODO:062 Anonimnu metodu zadanu delegatom nadomjestiti jednostavnim lambda izrazom. Pokrenuti program i pogledati ispis.
+            // Anonimnu metodu zadanu delegatom nadomjestiti jednostavnim lambda izrazom. Pokrenuti program i pogledati ispis.
 
             nit.Start();
 
