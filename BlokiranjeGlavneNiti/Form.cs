@@ -15,6 +15,17 @@ namespace Vsite.CSharp.DogađajiDelegati
         public Form()
         {
             InitializeComponent();
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            textBoxTime.Text = DateTime.Now.ToLongTimeString();
+        }
+
+        private void buttonBlock_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread.Sleep(10000);
         }
 
         // TODO:070 Na glavnu formu dodati timer (npr. povlačenjem s alatne trake/toolboxa, pod Components) i postaviti ga u aktivno stanje
