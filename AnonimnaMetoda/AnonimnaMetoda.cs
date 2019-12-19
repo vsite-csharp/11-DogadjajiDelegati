@@ -34,7 +34,6 @@ namespace Vsite.CSharp.DogađajiDelegati
             //    }
             //});
 
-            // TODO:062 Anonimnu metodu zadanu delegatom nadomjestiti jednostavnim lambda izrazom. Pokrenuti program i pogledati ispis.
             Thread nit=new Thread(()=>{
                 Console.WriteLine("Krenula je nova nit...");
                 for (int i = 0; i < max; ++i)
