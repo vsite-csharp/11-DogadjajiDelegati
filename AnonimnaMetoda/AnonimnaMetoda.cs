@@ -34,13 +34,13 @@ namespace Vsite.CSharp.DogađajiDelegati
             //    }
             //});
 
-            Thread nit = new Thread(delegate()( => {
-                Console.WriteLine("Krenula je nova nit...");
-                for (int i = 0; i < max; ++i) 
-                {
-                    Console.Write(format, i);
-                }
-            });
+            //Thread nit = new Thread(delegate()( => {
+            //    Console.WriteLine("Krenula je nova nit...");
+            //    for (int i = 0; i < max; ++i) 
+            //    {
+            //        Console.Write(format, i);
+            //    }
+            //});
             nit.Start();
 
             for (int i = 0; i < max; ++i)
