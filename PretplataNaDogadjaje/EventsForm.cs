@@ -17,7 +17,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             InitializeComponent();
             buttonDelete.Enabled = false;
             textBox.TextChanged += TextBox_TextChanged;
-            buttonDelete.Click += buttonDelete_Click;
+       
         }
 
         private void TextBox_TextChanged(object sender, EventArgs e)
