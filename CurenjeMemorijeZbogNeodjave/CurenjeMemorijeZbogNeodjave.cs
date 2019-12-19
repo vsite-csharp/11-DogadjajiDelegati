@@ -45,12 +45,9 @@ namespace CurenjeMemorijeZbogNeodjave
             for (int i = 0; i < 100000; ++i)
             {
                 SlušateljDogađaja sd = new SlušateljDogađaja();
+                gd.Događaj += sd.DogađajEventHandler;
 
-                // TODO:090 Pokrenuti kod i provjeriti ispis na konzolu
-
-                // TODO:091 Dodati naredbu kojom se objekt sd predbilježi na slušanje događaja, pokrenuti kod i provjeriti ispis
-
-                // TODO:092 Dodati naredbu kojom se objekt sd odjavljuje od slušanja događaja, pokrenuti kod i provjeriti ispis
+                gd.Događaj -= sd.DogađajEventHandler;
 
             }
 
