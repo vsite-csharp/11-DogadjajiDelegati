@@ -17,9 +17,10 @@ namespace Vsite.CSharp.DogađajiDelegati
         }
 
         // TODO:050 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz korijenovanih članova zadanog niza.
+
         public static IEnumerable<double> KorijenujČlanoveNiza(IEnumerable<double> niz)
         {
-            return niz;
+           return PrimijeniOperaciju(niz,(double x)=>Math.Sqrt(x));
         }
 
         // TODO:051 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz kvadrata članova zadanog niza.
