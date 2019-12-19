@@ -15,6 +15,23 @@ namespace Vsite.CSharp.DogađajiDelegati
         public EventsForm()
         {
             InitializeComponent();
+            buttonDelete.Enabled = false;
+            textBox.TextChanged += TextBox_TextChanged;
+        }
+
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            buttonDelete.Enabled = textBox.Text.Length > 0;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            textBox.Clear();
+        }
+
+        private void EventsForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

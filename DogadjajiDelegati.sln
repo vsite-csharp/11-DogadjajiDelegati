@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.960
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{C0F436B1-C3B7-4852-8AB6-BE11C299FAE4}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,6 +17,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03", "03", "{6F29345D-7F7C-4962-B0DB-F9AAB370FEBD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04", "04", "{3BFB1344-290C-45A3-8FE8-6A60BBB0574F}"
+	ProjectSection(SolutionItems) = preProject
+		ProsljedjivanjeDelegata\App.config = ProsljedjivanjeDelegata\App.config
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05", "05", "{D244FF84-AB13-4941-85F3-43BDEBE41FE5}"
 EndProject
