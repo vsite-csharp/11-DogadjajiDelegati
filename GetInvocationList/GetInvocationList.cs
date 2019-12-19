@@ -13,24 +13,27 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         static void IspišiFunkcijeUPaketu(Funkcija fja, double x1, double x2, int n)
         {
-            Console.WriteLine("Ispis funkcije {0}:", fja.Method);
-            Console.WriteLine("{0,4} {1,20}", "x", "y");
-            for (int i = 0; i < n; ++i)
+            var listaDelegata = fja.GetInvocationList();
+            foreach (var function in listaDelegata )
             {
-                double x = x1 + (x2 - x1) / (n - 1) * i;
-                Console.WriteLine("{0,15:0.0000000000} {1,20:0.0000000000}", x, fja(x));
+                Console.WriteLine("Ispis funkcije {0}:", function.Method);
+                Console.WriteLine("{0,4} {1,20}", "x", "y");
+                for (int i = 0; i < n; ++i)
+                {
+                    double x = x1 + (x2 - x1) / (n - 1) * i;
+                    Console.WriteLine("{0,15:0.0000000000} {1,20:0.0000000000}", x, function.DynamicInvoke(x));
+                }
             }
         }
 
         public static void IspišiFunkcijeZasebno(Funkcija fja, double x1, double x2, int n)
         {
-            // TODO:041 Pomoću metode GetInvocationList dohvatiti sve delegatske funkcije zasebno i za svaku ispisati vrijednosti u traženom intervalu
-
-
-            // TODO:042 Pokrenuti program i provjeriti ispis.
+            foreach(var f in fja.GetInvocationList())
+            {
+                IspišiFunkcijeUPaketu((Funkcija)f, x1, x2, n);
+            }
         }
 
-        // TODO:043 Pokrenuti i provjeriti testove (test u grupi "TestGetInvocationList" mora proći)
 
         static void Main(string[] args)
         {
