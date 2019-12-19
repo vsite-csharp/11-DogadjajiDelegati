@@ -22,19 +22,18 @@ namespace Vsite.CSharp.DogađajiDelegati
             }
         }
 
-        public static void IspišiFunkcijeZasebno(Funkcija fja, double x1, double x2, int n)
+        public static void IspišiFunkcijeZasebno(Funkcija fje, double x1, double x2, int n)
         {
-            // TODO:041 Pomoću metode GetInvocationList dohvatiti sve delegatske funkcije zasebno i za svaku ispisati vrijednosti u traženom intervalu
+            var listaDelegata = fje.GetInvocationList();
+            foreach (var fja in listaDelegata)
+            {
+                IspišiFunkcijeUPaketu((Funkcija)fja, x1, x2, n);
+            }
 
-
-            // TODO:042 Pokrenuti program i provjeriti ispis.
         }
-
-        // TODO:043 Pokrenuti i provjeriti testove (test u grupi "TestGetInvocationList" mora proći)
 
         static void Main(string[] args)
         {
-            // TODO:040 Pokrenuti program i provjeriti ispis
             Funkcija f = Math.Cos;
             f += Math.Sin;
 
