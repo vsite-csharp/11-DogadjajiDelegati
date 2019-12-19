@@ -17,6 +17,11 @@ namespace Vsite.CSharp.DogađajiDelegati
             InitializeComponent();
         }
 
+        private void Form_Load(object sender, EventArgs e)
+        {
+
+        }
+
         // TODO:070 Na glavnu formu dodati timer (npr. povlačenjem s alatne trake/toolboxa, pod Components) i postaviti ga u aktivno stanje
 
 

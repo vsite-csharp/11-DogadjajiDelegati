@@ -60,6 +60,7 @@
             this.Controls.Add(this.textBoxTime);
             this.Name = "Form";
             this.Text = "Blokiranje glavne niti";
+            this.Load += new System.EventHandler(this.Form_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
