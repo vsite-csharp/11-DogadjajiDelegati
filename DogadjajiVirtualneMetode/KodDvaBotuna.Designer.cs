@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button = new System.Windows.Forms.Button();
-            this.buttonMy = new System.Windows.Forms.Button();
+            this.buttonMy = new KodDvaBotuna.MyButton();
             this.SuspendLayout();
             // 
             // button
@@ -66,6 +66,6 @@
         #endregion
 
         private System.Windows.Forms.Button button;
-        private System.Windows.Forms.Button buttonMy;
+        private KodDvaBotuna.MyButton buttonMy;
     }
 }

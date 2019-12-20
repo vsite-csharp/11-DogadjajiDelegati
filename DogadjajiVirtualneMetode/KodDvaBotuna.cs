@@ -15,8 +15,9 @@ namespace Vsite.CSharp.DogađajiDelegati
         public KodDvaBotuna()
         {
             InitializeComponent();
-            // TODO:100 Pridružiti donja dva rukovatelja događajima Click tipki button i buttonMy
-
+            // Pridružiti donja dva rukovatelja događajima Click tipki button i buttonMy
+            button.Click += Button_Click;
+            buttonMy.Click += ButtonMy_Click;
         }
 
         private void Button_Click(object sender, EventArgs e)
@@ -29,9 +30,14 @@ namespace Vsite.CSharp.DogađajiDelegati
             MessageBox.Show("Kliknuo si me!", "Moj botun");
         }
 
-        // TODO:101 Napraviti klasu MyButton koja će biti izvedena iz klase Button, u njoj nadglasati virtualnu metodu OnClick te unutar metode dodati prikaz kontrole MessageBox
-
-        // TODO:102 Promijeniti objekt buttonMy u formi tako da bude tipa MyButton, pokrenuti kod i provjeriti ponašanje tipke
+        // Napraviti klasu MyButton koja će biti izvedena iz klase Button, u njoj nadglasati virtualnu metodu OnClick te unutar metode dodati prikaz kontrole MessageBox
+        public class MyButton : Button {
+            protected override void OnClick(EventArgs e)
+            {
+                MessageBox.Show("jesi me!", "Moj novi botun");
+            }
+        }
+        // Promijeniti objekt buttonMy u formi tako da bude tipa MyButton, pokrenuti kod i provjeriti ponašanje tipke
 
         // TODO:103 U metodi OnClick klase MyButton zakomentirati poziv base.OnClick te provjeriti ponašanje tipke nakon toga.
     }
