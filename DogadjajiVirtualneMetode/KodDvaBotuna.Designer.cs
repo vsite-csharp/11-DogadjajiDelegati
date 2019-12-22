@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             this.button = new System.Windows.Forms.Button();
-            this.buttonMy = new System.Windows.Forms.Button();
+            //this.buttonMy = new System.Windows.Forms.Button();
+            this.buttonMy = new MyButton();
             this.SuspendLayout();
             // 
             // button
@@ -66,6 +67,8 @@
         #endregion
 
         private System.Windows.Forms.Button button;
-        private System.Windows.Forms.Button buttonMy;
+        //private System.Windows.Forms.Button buttonMy;
+        private MyButton buttonMy;
+
     }
 }
