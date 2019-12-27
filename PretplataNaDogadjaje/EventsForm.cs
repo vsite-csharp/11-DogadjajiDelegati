@@ -33,7 +33,4 @@ namespace Vsite.CSharp.DogađajiDelegati
             Close();
         }
     }
-
-    // TODO:006 Pokrenuti i provjeriti testove (4 testa u grupi "TestPretplateNaDogađaje" moraju proći)
-
 }
