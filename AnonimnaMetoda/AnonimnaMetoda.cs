@@ -34,20 +34,20 @@ namespace Vsite.CSharp.DogađajiDelegati
             //     }
             // } );
 
-            Thread nit = new Thread(()=>
-            {
-                Console.WriteLine("Krenula je nova nit...");
-                for (int i = 0; i < max; ++i)
-                {
-                    Console.Write(format, i);
-                }
-            });
-
-            // Thread nit = new Thread(delegate() ... );
-
-            // TODO:062 Anonimnu metodu zadanu delegatom nadomjestiti jednostavnim lambda izrazom. Pokrenuti program i pogledati ispis.
-
-            nit.Start();
+            // Thread nit = new Thread(()=>
+            // {
+            //     Console.WriteLine("Krenula je nova nit...");
+            //     for (int i = 0; i < max; ++i)
+            //     {
+            //         Console.Write(format, i);
+            //     }
+            // });
+            //
+            //Thread nit = new Thread(delegate () => { Console.WriteLine("dsa"); });
+            //
+            //// TODO:062 Anonimnu metodu zadanu delegatom nadomjestiti jednostavnim lambda izrazom. Pokrenuti program i pogledati ispis.
+            //
+            //nit.Start();
 
             for (int i = 0; i < max; ++i)
             {
@@ -55,7 +55,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             }
 
             Console.WriteLine("Čekam nit");
-            nit.Join(); // čeka dodatnu nit da završi s izvođenjem
+            //nit.Join(); // čeka dodatnu nit da završi s izvođenjem
 
             Console.WriteLine();
             Console.WriteLine("GOTOVO!!!");

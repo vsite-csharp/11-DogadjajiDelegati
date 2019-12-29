@@ -9,10 +9,6 @@ namespace Vsite.CSharp.DogađajiDelegati
     {
         static void Main(string[] args)
         {
-            // TODO:080 Pogledati definicije klasa GeneratorAlarma, GeneratorAlarma.AlarmEventArgs i SlušateljAlarma te njihovo korištenje u kodu dolje.
-
-            // TODO:081 Pokrenuti program i provjeriti ispise.
-
             // kreiramo objekt koji će generirati alarme
             GeneratorAlarma ga = new GeneratorAlarma();
 
