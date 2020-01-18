@@ -25,20 +25,21 @@ namespace Vsite.CSharp.DogađajiDelegati
         static void Main(string[] args)
         {
             // TODO:060 Pokrenuti program i pogledati ispis.
-            Thread nit = new Thread(NitnaMetoda);
-
-            // TODO:061 Umjesto gornje naredbe u kojoj se prosljeđuje NitnaMetoda, novoj niti proslijediti anonimnu metodu definiranu pomoću delegata. Pokrenuti program i pogledati ispis.
-            // Thread nit = new Thread(delegate() ... );
-
-            // TODO:062 Anonimnu metodu zadanu delegatom nadomjestiti jednostavnim lambda izrazom. Pokrenuti program i pogledati ispis.
-
-            nit.Start();
-
-            for (int i = 0; i < max; ++i)
+            Thread nit = new Thread(() =>
             {
-                Console.Write(format, -i);
+                Console.WriteLine("Krenula je nova nit...");
+                for (int i = 0; i < max; ++i)
+                {
+                    Console.Write(format, i);
+                }
             }
+                );
+                nit.Start();
 
+                // TODO:061 Umjesto gornje naredbe u kojoj se prosljeđuje NitnaMetoda, novoj niti proslijediti anonimnu metodu definiranu pomoću delegata. Pokrenuti program i pogledati ispis.
+                // Thread nit = new Thread(delegate() ... );
+
+                // TODO:062 Anonimnu metodu zadanu delegatom nadomjestiti jednostavnim lambda izrazom. Pokrenuti program i pogledati ispis
             Console.WriteLine("Čekam nit");
             nit.Join(); // čeka dodatnu nit da završi s izvođenjem
 
