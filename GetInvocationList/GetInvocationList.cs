@@ -25,7 +25,12 @@ namespace Vsite.CSharp.DogađajiDelegati
         public static void IspišiFunkcijeZasebno(Funkcija fja, double x1, double x2, int n)
         {
             // TODO:041 Pomoću metode GetInvocationList dohvatiti sve delegatske funkcije zasebno i za svaku ispisati vrijednosti u traženom intervalu
-
+            for(int i=0;i<fja.GetInvocationList().Length;i++)
+            {
+                Console.WriteLine("Ispis funkcije {0}:", fja.Method);
+                double x = x1 + (x2 - x1) / (n - 1) * i;
+                Console.WriteLine(x);
+            }
 
             // TODO:042 Pokrenuti program i provjeriti ispis.
         }
