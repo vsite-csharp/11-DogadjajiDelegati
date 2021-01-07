@@ -42,7 +42,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             Console.WriteLine("Kada stisnemo tipku dići će se alarm, ali prijavljenog slušatelja nema...");
             Console.ReadKey(true);
 
-            ga.DižiAlarm("hodnik", 1, "mačka");
+            ga.DižiAlarm("hodnik", 1, "mačke");
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey(true);
