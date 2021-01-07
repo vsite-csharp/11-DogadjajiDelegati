@@ -12,7 +12,7 @@ namespace Vsite.CSharp.DogađajiDelegati
         public void AlarmNotifikacija(object sender, AlarmEventArgs e)
         {
             Console.WriteLine("***Dobivena je notifikacija o alarmu:");
-            Console.WriteLine($"***{e.Vrijeme: mjesto={e.Mjesto}, razina={e.Razina}, opis={e.Opis}");
+            Console.WriteLine($"***e.Vrijeme: mjesto={e.Mjesto}, razina={e.Razina}, opis={e.Opis}"); 
         }
         // Modificirati metodu AlarmNotifikacija tako da ispiše sve podatke o alarmu (vrijeme, mjesto, razinu i opis). Pokrenuti program i provjeriti ispis.
     }
