@@ -51,16 +51,19 @@
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(202, 20);
             this.textBox.TabIndex = 1;
+            this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // buttonDelete
             // 
             this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonDelete.Enabled = false;
             this.buttonDelete.Location = new System.Drawing.Point(228, 32);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
             this.buttonDelete.TabIndex = 2;
             this.buttonDelete.Text = "&Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonClose
             // 
@@ -71,6 +74,7 @@
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "E&xit";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // EventsForm
             // 
