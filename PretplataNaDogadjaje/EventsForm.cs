@@ -15,8 +15,27 @@ namespace Vsite.CSharp.DogađajiDelegati
         public EventsForm()
         {
             InitializeComponent();
+            textBox.TextChanged += TextBox_TextChanged;
+        }
+
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            buttonDelete.Enabled = textBox.TextLength > 0;
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+    
+            {
+                textBox.Clear();
+            }
         }
     }
+
 
     // TODO:000 Dodati metodu za obradu događaja (event handler) koja će biti pozvana kada se promijeni sadržaj textBox kontrole (na događaj TextChanged). Unutar metode treba onemogućiti tipku buttonDelete ako nema upisanog teksta u kontroli textBox, odnosno omogućiti ju kada je neki tekst upisan.
 
