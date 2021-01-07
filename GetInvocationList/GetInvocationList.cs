@@ -35,7 +35,7 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         static void Main(string[] args)
         {
-            // TODO:040 Pokrenuti program i provjeriti ispis
+            // Pokrenuti program i provjeriti ispis
             Funkcija f = Math.Cos;
             f += Math.Sin;
 
