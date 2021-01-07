@@ -26,7 +26,7 @@ namespace Vsite.CSharp.DogađajiDelegati
         {
             foreach (Funkcija f in fja.GetInvocationList())
                 IspišiFunkciju(f, x1, x2, n);
-            // TODO:041 Pomoću metode GetInvocationList dohvatiti sve delegatske funkcije zasebno i za svaku ispisati vrijednosti u traženom intervalu
+            // Pomoću metode GetInvocationList dohvatiti sve delegatske funkcije zasebno i za svaku ispisati vrijednosti u traženom intervalu
             
             // Pokrenuti program i provjeriti ispis.
         }
