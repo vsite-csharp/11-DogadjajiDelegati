@@ -28,31 +28,31 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static void PozivStatičkeMetodePrekoDelegata()
         {
-            // TODO:010 Instancirati delegata tipa MojDelegat metodom StatičkaMetoda te pozvati delegata.
+            MojDelegat md = new MojDelegat(StatičkaMetoda);
 
-            // TODO:011 Pokrenuti program i pogledati ispis.
+            md();
         }
 
         public static void PozivMetodeInstancePrekoDelegata()
         {
-            // TODO:012 Instancirati delegata tipa MojDelegat metodom MetodaInstance te pozvati delegata. 
+            MojDelegat md = new PridruživanjeMetodaIPozivDelegata().MetodaInstance;
 
-            // TODO:013 Pokrenuti program i provjeriti ispis.
+            md();
         }
 
         public static void PozivStatičkeIDvijeMetodeInstancePrekoDelegata()
         {
-            // TODO:014 Instancirati delegata tipa MojDelegat metodom MetodaInstance. 
-
-            // TODO:015 Delegatu dodati metodu Statička metoda i metodu DrugaMetodaInstance te pozvati delegata.
-
-            // TODO:016 Pokrenuti program i provjeriti ispis.
-
-            // TODO:017 Pokrenuti i provjeriti testove (3 testa u grupi "DelegatskeMetode" moraju proći).
+            var instanca = new PridruživanjeMetodaIPozivDelegata();
+            MojDelegat md = instanca.MetodaInstance;
+            md += StatičkaMetoda;
+            md += instanca.DrugaMetodaInstance;
+            md();
         }
 
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+
             PozivStatičkeMetodePrekoDelegata();
 
             Console.WriteLine();
