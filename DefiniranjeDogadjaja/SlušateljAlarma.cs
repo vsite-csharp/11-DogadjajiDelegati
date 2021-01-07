@@ -5,11 +5,16 @@ using System.Text;
 
 namespace Vsite.CSharp.DogađajiDelegati
 {
-    // TODO:062 U klasu SlušateljAlarma dodati metodu AlarmNotifikacija koja će se moći predbilježiti na događaj Alarm u klasi GeneratorAlarma. 
+    // 062 U klasu SlušateljAlarma dodati metodu AlarmNotifikacija koja će se moći predbilježiti na događaj Alarm u klasi GeneratorAlarma. 
     //          Unutar te metode na konzolu ispisati poruku da je dobivena poruka o alarmu
     class SlušateljAlarma
     {
-
+        // EventArgs e
+        public void AlarmNotifikacija(object sender, AlarmEventArgs e )
+        {
+            Console.WriteLine("***Dobivena je notifikacija o alarmu***");
+            Console.WriteLine($"***{e.Vrijeme}: mjesto ={e.Mjesto}, razina={e.Razina}, opis ={e.Opis}");
+        }
         // TODO:067 Modificirati metodu AlarmNotifikacija tako da ispiše sve podatke o alarmu (vrijeme, mjesto, razinu i opis). Pokrenuti program i provjeriti ispis.
     }
 
