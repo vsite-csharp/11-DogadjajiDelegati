@@ -9,6 +9,11 @@ namespace Vsite.CSharp.DogađajiDelegati
     //          Unutar te metode na konzolu ispisati poruku da je dobivena poruka o alarmu
     class SlušateljAlarma
     {
+        public void AlarmNotifikacija(object sender, AlarmEventArgs e)
+        {
+            Console.WriteLine("DOBIVENA JE NOTIFIKACIJA O ALARMU");
+            Console.WriteLine($"{e.Vrijeme}: mjesto={e.Mjesto}, vrijeme={e.Vrijeme}, opis={e.Opis}, razina={e.Razina}");
+        }
 
         // TODO:067 Modificirati metodu AlarmNotifikacija tako da ispiše sve podatke o alarmu (vrijeme, mjesto, razinu i opis). Pokrenuti program i provjeriti ispis.
     }
