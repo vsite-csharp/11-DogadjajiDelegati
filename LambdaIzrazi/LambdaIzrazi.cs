@@ -16,25 +16,25 @@ namespace Vsite.CSharp.DogađajiDelegati
             return rezultat;
         }
 
-        // TODO:050 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz korijenovanih članova zadanog niza.
+        // 050 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz korijenovanih članova zadanog niza.
         public static IEnumerable<double> KorijenujČlanoveNiza(IEnumerable<double> niz)
         {
-            return niz;
+            return PrimijeniOperaciju(niz, Math.Sqrt);
         }
 
-        // TODO:051 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz kvadrata članova zadanog niza.
+        // 051 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz kvadrata članova zadanog niza.
         public static IEnumerable<double> KvadrirajČlanoveNiza(IEnumerable<double> niz)
         {
-            return niz;
+            return PrimijeniOperaciju(niz, x => x * x);
         }
 
-        // TODO:052 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz riječi iz zadanog niza sa svim velikim slovima.
+        // 052 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz riječi iz zadanog niza sa svim velikim slovima.
         public static IEnumerable<string> Kapitaliziraj(IEnumerable<string> niz)
         {
-            return niz;
+            return PrimijeniOperaciju(niz, s => s.ToUpper());
         }
 
-        // TODO:053 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
+        // 053 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
 
         static void Main(string[] args)
         {
