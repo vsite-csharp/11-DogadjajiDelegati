@@ -50,4 +50,4 @@ namespace Vsite.CSharp.DogađajiDelegati
     // TODO:005 Pokrenuti program i provjeriti funkcionalnost tipke.
 
     // TODO:006 Pokrenuti i provjeriti testove (4 testa u grupi "PretplataNaDogađaje" moraju proći)
-}
+
