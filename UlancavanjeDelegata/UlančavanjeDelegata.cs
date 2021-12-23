@@ -51,7 +51,7 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static TextWriter writer;
 
-        // TODO:034 Pokrenite i provjerite testove (dva testa u grupi "UlančavanjaDelegata" moraju proći)
+        // :034 Pokrenite i provjerite testove (dva testa u grupi "UlančavanjaDelegata" moraju proći)
         static void Main(string[] args)
         {
             IspisPoruka("Dobar dan", "Bok", "Guten Tag");
