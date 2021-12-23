@@ -51,6 +51,7 @@
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(202, 20);
             this.textBox.TabIndex = 1;
+            this.textBox.TextChanged += new System.EventHandler(this.textBox_TextChanged);
             // 
             // buttonDelete
             // 
@@ -61,6 +62,7 @@
             this.buttonDelete.TabIndex = 2;
             this.buttonDelete.Text = "&Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonClose
             // 
@@ -71,6 +73,7 @@
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "E&xit";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // EventsForm
             // 
