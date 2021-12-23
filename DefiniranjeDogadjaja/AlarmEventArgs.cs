@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 
 namespace Vsite.CSharp.DogađajiDelegati
 {
-    // TODO:064 Klasu AlarmEventArgs definirati da je izvedena iz klase EventArgs. AlarmEventArgs treba omogućiti da se podaci o alarmu prenesu slušatelju.
-    // TODO:065 U tu klasu dodati javna readonly polja Vrijeme (DateTime), Mjesto (string), Razina (int) i Opis (string) koja treba inicijalizirati u konstruktoru klase.
+    // :064 Klasu AlarmEventArgs definirati da je izvedena iz klase EventArgs. AlarmEventArgs treba omogućiti da se podaci o alarmu prenesu slušatelju.
+    // :065 U tu klasu dodati javna readonly polja Vrijeme (DateTime), Mjesto (string), Razina (int) i Opis (string) koja treba inicijalizirati u konstruktoru klase.
 
-    public class AlarmEventArgs
+    public class AlarmEventArgs : EventArgs
     {
+        public readonly DateTime Vrijeme = DateTime.Now;
+        public readonly string Mjesto;
+        public readonly int Razina; 
+        public readonly string Opis;
+
+
+        public AlarmEventArgs(string mjesto, int razina, string opis)
+        {
+            Mjesto = mjesto;
+            Razina = razina;
+            Opis = opis; 
+        }
+
+
     }
 }
