@@ -34,6 +34,9 @@ namespace Vsite.CSharp.DogađajiDelegati
         public static void PozivStatičkeMetodePrekoDelegata()
         {
             // TODO:010 Instancirati delegata tipa MojDelegat metodom StatičkaMetoda te pozvati delegata.
+            MojDelegat del = StatičkaMetoda;
+            del();
+            
 
             // TODO:011 Pokrenuti program i pogledati ispis.
         }
@@ -41,20 +44,29 @@ namespace Vsite.CSharp.DogađajiDelegati
         public static void PozivMetodeInstancePrekoDelegata()
         {
             // TODO:012 Instancirati delegata tipa MojDelegat metodom MetodaInstance te pozvati delegata. 
-
+            PridruživanjeMetodaIPozivDelegata obj = new PridruživanjeMetodaIPozivDelegata();
+            MojDelegat del = new MojDelegat(obj.MetodaInstance);
+            del();
             // TODO:013 Pokrenuti program i provjeriti ispis.
         }
 
         public static void PozivStatičkeIDvijeMetodeInstancePrekoDelegata()
         {
             // TODO:014 Instancirati delegata tipa MojDelegat metodom MetodaInstance. 
+            
+            PridruživanjeMetodaIPozivDelegata obj = new PridruživanjeMetodaIPozivDelegata();
+            MojDelegat del = obj.MetodaInstance;
 
+            
             // TODO:015 Delegatu dodati metodu StatičkaMetoda i metodu DrugaMetodaInstance te pozvati delegata.
+            del += StatičkaMetoda;
+            del += obj.DrugaMetodaInstance;
+            //del += DrugaStatičkaMetoda;
+            del();
 
             // TODO:016 Pokrenuti program i provjeriti ispis.
 
             // TODO:017 Delegatu prije poziva pridružiti metodu DrugaStatičkaMetoda. Pogledati što se događa.
-
             // TODO:018 Pokrenuti i provjeriti testove (3 testa u grupi "DelegatskeMetode" moraju proći).
         }
 
