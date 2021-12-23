@@ -15,22 +15,39 @@ namespace Vsite.CSharp.DogađajiDelegati
         public EventsForm()
         {
             InitializeComponent();
+            buttonDelete.Enabled = false;
+            textBox.TextChanged += TextBox_TextChanged;
+        }
+
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            buttonDelete.Enabled = textBox.Text.Length != 0;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            textBox.Clear();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 
-    // TODO:000 Pokrenuti program i pogledati koje kontrole se nalaze na glavnoj formi.
+    // Pokrenuti program i pogledati koje kontrole se nalaze na glavnoj formi.
 
-    // TODO:001 Dodati metodu za obradu događaja (event handler) koja će biti pozvana kada se promijeni sadržaj textBox kontrole (na događaj TextChanged).
-    // TODO:002 Unutar metode treba onemogućiti tipku buttonDelete ako nema upisanog teksta u kontroli textBox, odnosno omogućiti ju kada je neki tekst upisan.
-    // TODO:003 Pokrenuti program i provjeriti ponašanje tipke.
+    // Dodati metodu za obradu događaja (event handler) koja će biti pozvana kada se promijeni sadržaj textBox kontrole (na događaj TextChanged).
+    // Unutar metode treba onemogućiti tipku buttonDelete ako nema upisanog teksta u kontroli textBox, odnosno omogućiti ju kada je neki tekst upisan.
+    // Pokrenuti program i provjeriti ponašanje tipke.
+    
+    // Dodati metodu za obradu događaja koja će biti pozvana pri pritisku na tipku buttonDelete (događaj Click) i koja će obrisati sadržaj kontrole textBox.
 
-    // TODO:004 Dodati metodu za obradu događaja koja će biti pozvana pri pritisku na tipku buttonDelete (događaj Click) i koja će obrisati sadržaj kontrole textBox.
+    // Pokrenuti program i provjeriti funkcionalnost tipke.
 
-    // TODO:005 Pokrenuti program i provjeriti funkcionalnost tipke.
+    // Dodati metodu za obradu događaja koja će biti pozvana pri pritisku na tipku buttonClose i koja će zatvoriti formu.
 
-    // TODO:006 Dodati metodu za obradu događaja koja će biti pozvana pri pritisku na tipku buttonClose i koja će zatvoriti formu.
+    // Pokrenuti program i provjeriti funkcionalnost tipke.
 
-    // TODO:007 Pokrenuti program i provjeriti funkcionalnost tipke.
-
-    // TODO:008 Pokrenuti i provjeriti testove (4 testa u grupi "PretplataNaDogađaje" moraju proći).
+    // Pokrenuti i provjeriti testove (4 testa u grupi "PretplataNaDogađaje" moraju proći).
 }
