@@ -56,7 +56,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             MojDelegat md = instanca.MetodaInstance;
             // Delegatu dodati metodu StatičkaMetoda i metodu DrugaMetodaInstance te pozvati delegata.
             md += StatičkaMetoda;
-            md += instanca.MetodaInstance;
+            md += instanca.DrugaMetodaInstance;
             //md += DrugaStatičkaMetoda;
             md();
 
