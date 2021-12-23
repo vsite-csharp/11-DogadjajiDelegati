@@ -34,6 +34,21 @@ namespace Vsite.CSharp.DogađajiDelegati
         {
             Close();
         }
+
+        private void EventsForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonClose_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void buttonDelete_Click_1(object sender, EventArgs e)
+        {
+            textBox.Clear();
+        }
     }
 
     // TODO:000 Pokrenuti program i pogledati koje kontrole se nalaze na glavnoj formi.
