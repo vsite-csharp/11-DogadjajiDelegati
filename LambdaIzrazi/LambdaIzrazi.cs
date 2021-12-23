@@ -32,16 +32,16 @@ namespace Vsite.CSharp.DogađajiDelegati
             return niz.Select(x => x * x);
         }
 
-        // TODO:052 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz riječi iz zadanog niza sa svim velikim slovima.
+        // :052 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz riječi iz zadanog niza sa svim velikim slovima.
         public static IEnumerable<string> Kapitaliziraj(IEnumerable<string> niz)
         {
             return PrimijeniOperaciju(niz, s => s.ToUpper());
             //return niz.Select(s => s.ToUpper);
         }
 
-        // TODO:053 Pozive metode PrimijeniOperaciju u gornjim metodama zamijenite pozivima metode proširenja IEnumerable<T>.Select.
+        // :053 Pozive metode PrimijeniOperaciju u gornjim metodama zamijenite pozivima metode proširenja IEnumerable<T>.Select.
 
-        // TODO:054 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
+        // :054 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
 
         static void Main(string[] args)
         {
