@@ -61,6 +61,7 @@
             this.buttonDelete.TabIndex = 2;
             this.buttonDelete.Text = "&Delete";
             this.buttonDelete.UseVisualStyleBackColor = true;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // buttonClose
             // 
@@ -71,6 +72,7 @@
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "E&xit";
             this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // EventsForm
             // 
@@ -83,7 +85,7 @@
             this.Controls.Add(this.label1);
             this.MinimumSize = new System.Drawing.Size(330, 210);
             this.Name = "EventsForm";
-            this.Text = "Events";
+            this.Text = "Events";          
             this.ResumeLayout(false);
             this.PerformLayout();
 
