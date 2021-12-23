@@ -51,6 +51,7 @@
             this.textBox.Name = "textBox";
             this.textBox.Size = new System.Drawing.Size(202, 20);
             this.textBox.TabIndex = 1;
+            
             // 
             // buttonDelete
             // 
