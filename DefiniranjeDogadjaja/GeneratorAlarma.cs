@@ -11,10 +11,19 @@ namespace Vsite.CSharp.DogađajiDelegati
     // TODO:067 Modificirati klasu GeneratorAlarma tako da je događaj Alarm tipa AlarmEventHandler.
     class GeneratorAlarma
     {
-        // TODO:061 U metodu DižiAlarm dodati poziv metode OnAlarm.
-        public void DižiAlarm(string mjesto, int razina, string opis)
+        //public event EventHandler Alarm;
+        public event AlarmEventHandler Alarm;
+        // 061 U metodu DižiAlarm dodati poziv metode OnAlarm.
+        public delegate void AlarmEventHandler(object sender, AlarmEventArgs a);
+        public virtual void OnAlarm(AlarmEventArgs e)
         {
+            Alarm?.Invoke(this, e);            
+        }
+        public void DižiAlarm(string mjesto, int razina, string opis)
+        {            
             Console.WriteLine($"!!!Generator diže alarm {DateTime.Now}: mjesto={mjesto}, razina={razina}, opis={opis}!!!");
+            //OnAlarm(EventArgs.Empty);
+            OnAlarm(new AlarmEventArgs(mjesto, razina, opis));
         }
     }
 }
