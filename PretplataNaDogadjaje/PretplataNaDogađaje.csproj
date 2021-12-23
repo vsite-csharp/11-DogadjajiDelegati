@@ -76,5 +76,15 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DefiniranjeDogadjaja\DefiniranjeDogađaja.csproj">
+      <Project>{7cb6cb45-20a5-4b2e-b0e7-30819191e9de}</Project>
+      <Name>DefiniranjeDogađaja</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DogadjajiVirtualneMetode\DogađajiVirtualneMetode.csproj">
+      <Project>{d592914a-1c67-4504-8f0c-341933e01db9}</Project>
+      <Name>DogađajiVirtualneMetode</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
