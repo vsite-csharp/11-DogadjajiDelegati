@@ -9,6 +9,7 @@ namespace Vsite.CSharp.DogađajiDelegati
     class PridruživanjeMetodaIPozivDelegata
     {
         // definicija delegata
+        // Definiramo delegata kojoj ćemo moći pridtužiti metode koje su takvog potpisa, ne primaju argument i  ne vraćju ništa 
         delegate void MojDelegat();
 
         private static void StatičkaMetoda()
@@ -33,29 +34,38 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static void PozivStatičkeMetodePrekoDelegata()
         {
-            // TODO:010 Instancirati delegata tipa MojDelegat metodom StatičkaMetoda te pozvati delegata.
+            // :010 Instancirati delegata tipa MojDelegat metodom StatičkaMetoda te pozvati delegata.
+            MojDelegat md = StatičkaMetoda;
+            md(); 
 
-            // TODO:011 Pokrenuti program i pogledati ispis.
+            // :011 Pokrenuti program i pogledati ispis.
         }
 
         public static void PozivMetodeInstancePrekoDelegata()
         {
-            // TODO:012 Instancirati delegata tipa MojDelegat metodom MetodaInstance te pozvati delegata. 
-
-            // TODO:013 Pokrenuti program i provjeriti ispis.
+            // :012 Instancirati delegata tipa MojDelegat metodom MetodaInstance te pozvati delegata. 
+            var instanca = new PridruživanjeMetodaIPozivDelegata();
+            MojDelegat md = instanca.MetodaInstance;
+            md(); 
+            // :013 Pokrenuti program i provjeriti ispis.
         }
 
         public static void PozivStatičkeIDvijeMetodeInstancePrekoDelegata()
         {
             // TODO:014 Instancirati delegata tipa MojDelegat metodom MetodaInstance. 
+            var instanca = new PridruživanjeMetodaIPozivDelegata();
+            MojDelegat md = instanca.MetodaInstance;
+
 
             // TODO:015 Delegatu dodati metodu StatičkaMetoda i metodu DrugaMetodaInstance te pozvati delegata.
+            md += StatičkaMetoda;
+            md += instanca.DrugaMetodaInstance;
+            md(); 
+            // :016 Pokrenuti program i provjeriti ispis.
 
-            // TODO:016 Pokrenuti program i provjeriti ispis.
+            // :017 Delegatu prije poziva pridružiti metodu DrugaStatičkaMetoda. Pogledati što se događa.
 
-            // TODO:017 Delegatu prije poziva pridružiti metodu DrugaStatičkaMetoda. Pogledati što se događa.
-
-            // TODO:018 Pokrenuti i provjeriti testove (3 testa u grupi "DelegatskeMetode" moraju proći).
+            // :018 Pokrenuti i provjeriti testove (3 testa u grupi "DelegatskeMetode" moraju proći).
         }
 
         static void Main(string[] args)
