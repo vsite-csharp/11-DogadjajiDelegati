@@ -19,7 +19,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             ga.DižiAlarm("zahod", 0, "propuh");
 
             Console.WriteLine();
-            Console.WriteLine("Slušatelj će se prijaviti tek nakon što stisnemo tipku");
+            Console.WriteLine("Slušatelj će se prijaviti tek najkon što stisnemo tipku");
             Console.ReadKey(true);
 
             SlušateljAlarma sa = new SlušateljAlarma();
