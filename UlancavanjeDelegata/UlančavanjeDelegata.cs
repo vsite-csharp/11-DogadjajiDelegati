@@ -28,16 +28,17 @@ namespace Vsite.CSharp.DogađajiDelegati
 
             ispisPoruke(poruke[0]);
 
-            // TODO:030 Pokrenuti program i pogledati sadržaj datoteke "poruke.txt" (u potkazalu bin\Debug).
+            // 030 Pokrenuti program i pogledati sadržaj datoteke "poruke.txt" (u potkazalu bin\Debug).
 
-            // TODO:031 Dodajte delegatu metodu IspišiNaKonzolu.
+            // 031 Dodajte delegatu metodu IspišiNaKonzolu.
 
+            ispisPoruke += IspišiNaKonzolu;
             ispisPoruke(poruke[1]);
 
-            // TODO:032 Pokrenite program i usporedite prikaz na konzoli sa sadržajem datoteke "poruke.txt".
+            // 032 Pokrenite program i usporedite prikaz na konzoli sa sadržajem datoteke "poruke.txt".
 
-            // TODO:033 Iz delegata uklonite IspišiUFajl, pokrenite program i provjerite sadržaj datoteke "poruke.txt".
-
+            // 033 Iz delegata uklonite IspišiUFajl, pokrenite program i provjerite sadržaj datoteke "poruke.txt".
+            ispisPoruke -= IspišiUFajl;
             ispisPoruke(poruke[2]);
         }
 
@@ -50,7 +51,7 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static TextWriter writer;
 
-        // TODO:034 Pokrenite i provjerite testove (dva testa u grupi "UlančavanjaDelegata" moraju proći)
+        // 034 Pokrenite i provjerite testove (dva testa u grupi "UlančavanjaDelegata" moraju proći)
         static void Main(string[] args)
         {
             IspisPoruka("Dobar dan", "Bok", "Guten Tag");
