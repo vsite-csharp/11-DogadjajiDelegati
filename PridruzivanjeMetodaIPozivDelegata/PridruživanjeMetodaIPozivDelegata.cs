@@ -33,27 +33,36 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static void PozivStatičkeMetodePrekoDelegata()
         {
-            // TODO:010 Instancirati delegata tipa MojDelegat metodom StatičkaMetoda te pozvati delegata.
-
-            // TODO:011 Pokrenuti program i pogledati ispis.
+            // Instancirati delegata tipa MojDelegat metodom StatičkaMetoda te pozvati delegata.
+            MojDelegat md = StatičkaMetoda;
+            md();
+            // Pokrenuti program i pogledati ispis.
         }
 
         public static void PozivMetodeInstancePrekoDelegata()
         {
-            // TODO:012 Instancirati delegata tipa MojDelegat metodom MetodaInstance te pozvati delegata. 
+            // Instancirati delegata tipa MojDelegat metodom MetodaInstance te pozvati delegata. 
+            var instanca = new PridruživanjeMetodaIPozivDelegata();
+            MojDelegat md = instanca.MetodaInstance;
+            md();
 
-            // TODO:013 Pokrenuti program i provjeriti ispis.
+            // Pokrenuti program i provjeriti ispis.
         }
 
         public static void PozivStatičkeIDvijeMetodeInstancePrekoDelegata()
         {
-            // TODO:014 Instancirati delegata tipa MojDelegat metodom MetodaInstance. 
+            // Instancirati delegata tipa MojDelegat metodom MetodaInstance. 
+            var instanca = new PridruživanjeMetodaIPozivDelegata();
+            MojDelegat md = instanca.MetodaInstance;
+            // Delegatu dodati metodu StatičkaMetoda i metodu DrugaMetodaInstance te pozvati delegata.
+            md += StatičkaMetoda;
+            md += instanca.MetodaInstance;
+            //md += DrugaStatičkaMetoda;
+            md();
 
-            // TODO:015 Delegatu dodati metodu StatičkaMetoda i metodu DrugaMetodaInstance te pozvati delegata.
+            // Pokrenuti program i provjeriti ispis.
 
-            // TODO:016 Pokrenuti program i provjeriti ispis.
-
-            // TODO:017 Delegatu prije poziva pridružiti metodu DrugaStatičkaMetoda. Pogledati što se događa.
+            // Delegatu prije poziva pridružiti metodu DrugaStatičkaMetoda. Pogledati što se događa.
 
             // TODO:018 Pokrenuti i provjeriti testove (3 testa u grupi "DelegatskeMetode" moraju proći).
         }
