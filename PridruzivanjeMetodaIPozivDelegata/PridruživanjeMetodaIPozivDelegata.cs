@@ -66,7 +66,7 @@ namespace Vsite.CSharp.DogađajiDelegati
 
             // :017 Delegatu prije poziva pridružiti metodu DrugaStatičkaMetoda. Pogledati što se događa.
 
-            // TODO:018 Pokrenuti i provjeriti testove (3 testa u grupi "DelegatskeMetode" moraju proći).
+            // :018 Pokrenuti i provjeriti testove (3 testa u grupi "DelegatskeMetode" moraju proći).
         }
 
         static void Main(string[] args)
