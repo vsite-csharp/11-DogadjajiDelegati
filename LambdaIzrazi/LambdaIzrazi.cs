@@ -16,27 +16,27 @@ namespace Vsite.CSharp.DogađajiDelegati
             return rezultat;
         }
 
-        // TODO:050 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz korijenovanih članova zadanog niza.
+        // U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz korijenovanih članova zadanog niza.
         public static IEnumerable<double> KorijenujČlanoveNiza(IEnumerable<double> niz)
         {
-            return niz;
+            return PrimijeniOperaciju(niz, Math.Sqrt);
         }
 
-        // TODO:051 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz kvadrata članova zadanog niza.
+        // U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz kvadrata članova zadanog niza.
         public static IEnumerable<double> KvadrirajČlanoveNiza(IEnumerable<double> niz)
         {
-            return niz;
+            return PrimijeniOperaciju(niz, x => x * x);
         }
 
-        // TODO:052 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz riječi iz zadanog niza sa svim velikim slovima.
+        // U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz riječi iz zadanog niza sa svim velikim slovima.
         public static IEnumerable<string> Kapitaliziraj(IEnumerable<string> niz)
         {
-            return niz;
+            return PrimijeniOperaciju(niz, x => x.ToString().ToUpper());
         }
 
-        // TODO:053 Pozive metode PrimijeniOperaciju u gornjim metodama zamijenite pozivima metode proširenja IEnumerable<T>.Select.
+        // Pozive metode PrimijeniOperaciju u gornjim metodama zamijenite pozivima metode proširenja IEnumerable<T>.Select.
 
-        // TODO:054 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
+        // Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
 
         static void Main(string[] args)
         {
