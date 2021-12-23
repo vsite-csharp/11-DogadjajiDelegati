@@ -26,7 +26,7 @@ namespace Vsite.CSharp.DogađajiDelegati
         public static void IspisFunkcijeSinus()
         {
             // TODO:020 Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Sin za 10 točaka u intervalu od 0 do Math.PI.
-
+            
             // TODO:021 Pokrenuti program i provjeriti ispis.
         }
 
