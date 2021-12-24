@@ -11,6 +11,11 @@ namespace Vsite.CSharp.DogađajiDelegati
     {
 
         // TODO:068 Modificirati metodu AlarmNotifikacija tako da ispiše sve podatke o alarmu (vrijeme, mjesto, razinu i opis). Pokrenuti program i provjeriti ispis.
+        public void AlarmNotifikacija(object sender, AlarmEventArgs e)
+        {
+            Console.WriteLine("AlarmNotifikacija");
+            Console.WriteLine($"{e.Vrijeme}: Mjesto: {e.Mjesto}, {e.Razina}, {e.Opis}");
+        }
     }
 
     // TODO:069 Pokrenuti testove u grupi DefiniranjeDogađaja (5 testova mora proći).
