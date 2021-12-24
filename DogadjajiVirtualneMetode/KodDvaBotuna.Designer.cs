@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button = new System.Windows.Forms.Button();
-            this.buttonMy = new System.Windows.Forms.Button();
+            this.buttonMy = new myButton();
             this.SuspendLayout();
             // 
             // button
@@ -40,6 +40,7 @@
             this.button.TabIndex = 0;
             this.button.Text = "&Button";
             this.button.UseVisualStyleBackColor = true;
+            this.button.Click += new System.EventHandler(this.Button_Click);
             // 
             // buttonMy
             // 
@@ -49,6 +50,7 @@
             this.buttonMy.TabIndex = 1;
             this.buttonMy.Text = "&My button";
             this.buttonMy.UseVisualStyleBackColor = true;
+            this.buttonMy.Click += new System.EventHandler(this.ButtonMy_Click);
             // 
             // KodDvaBotuna
             // 
@@ -66,6 +68,7 @@
         #endregion
 
         private System.Windows.Forms.Button button;
-        private System.Windows.Forms.Button buttonMy;
+        //private System.Windows.Forms.Button buttonMy;
+        private myButton buttonMy;
     }
 }

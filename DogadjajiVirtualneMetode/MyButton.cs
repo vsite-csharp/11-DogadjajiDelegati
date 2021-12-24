@@ -7,12 +7,12 @@ using System.Windows.Forms;
 
 namespace Vsite.CSharp.DogađajiDelegati
 {
-    class MyButton : Button
+    public class myButton : Button
     {
         protected override void OnClick(EventArgs e)
         {
-            MessageBox.Show("U overrideanoj metodi");
             //base.OnClick(e);
+            MessageBox.Show("Kliknuo si me!", "Moj botun");
         }
     }
 }
