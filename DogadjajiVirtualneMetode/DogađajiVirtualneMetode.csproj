@@ -54,6 +54,9 @@
     <Compile Include="KodDvaBotuna.Designer.cs">
       <DependentUpon>KodDvaBotuna.cs</DependentUpon>
     </Compile>
+    <Compile Include="MojBotun.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
