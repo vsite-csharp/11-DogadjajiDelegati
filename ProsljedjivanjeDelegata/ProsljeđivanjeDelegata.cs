@@ -35,7 +35,7 @@ namespace Vsite.CSharp.DogađajiDelegati
         public static void IspisFunkcijeE() // domaći rad
         {
             // TODO:022 Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Exp za 5 točaka u intervalu od 0 do 10.
-
+            IspišiFunkciju(Math.Exp, 0, 10, 5);
             // TODO:023 Pokrenuti program i provjeriti ispis
         }
 
