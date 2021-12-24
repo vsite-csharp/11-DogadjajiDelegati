@@ -52,12 +52,12 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static void PozivStatičkeIDvijeMetodeInstancePrekoDelegata()
         {
-            // TODO:014 Instancirati delegata tipa MojDelegat metodom MetodaInstance. 
+            // :014 Instancirati delegata tipa MojDelegat metodom MetodaInstance. 
             var instanca = new PridruživanjeMetodaIPozivDelegata();
             MojDelegat md = instanca.MetodaInstance;
 
 
-            // TODO:015 Delegatu dodati metodu StatičkaMetoda i metodu DrugaMetodaInstance te pozvati delegata.
+            // :015 Delegatu dodati metodu StatičkaMetoda i metodu DrugaMetodaInstance te pozvati delegata.
             md += StatičkaMetoda;
             md += instanca.DrugaMetodaInstance;
             md(); 
