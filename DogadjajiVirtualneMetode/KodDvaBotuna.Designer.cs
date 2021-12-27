@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.button = new System.Windows.Forms.Button();
-            this.buttonMy = new System.Windows.Forms.Button();
+            this.buttonMy = new MyButton();
             this.SuspendLayout();
             // 
             // button
