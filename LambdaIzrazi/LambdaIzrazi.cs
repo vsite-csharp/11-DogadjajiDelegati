@@ -36,7 +36,8 @@ namespace Vsite.CSharp.DogađajiDelegati
         // U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz riječi iz zadanog niza sa svim velikim slovima.
         public static IEnumerable<string> Kapitaliziraj(IEnumerable<string> niz)
         {
-            return PrimijeniOperaciju(niz, s => s.ToUpper());
+            //return PrimijeniOperaciju(niz, s => s.ToUpper());
+            return niz.Select(s => s.ToUpper());
             //return niz;
         }
 
