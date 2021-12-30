@@ -18,8 +18,6 @@ namespace Vsite.CSharp.DogađajiDelegati
             Opis = opis;
         }
 
-
-
         public readonly DateTime Vrijeme = DateTime.Now;
         public readonly string Mjesto;
         public readonly int Razina;

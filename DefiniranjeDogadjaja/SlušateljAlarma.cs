@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Vsite.CSharp.DogađajiDelegati
 {
-    // TODO:062 U klasu SlušateljAlarma dodati metodu AlarmNotifikacija koja će se moći predbilježiti na događaj Alarm u klasi GeneratorAlarma. 
+    // :062 U klasu SlušateljAlarma dodati metodu AlarmNotifikacija koja će se moći predbilježiti na događaj Alarm u klasi GeneratorAlarma. 
     //          Unutar te metode na konzolu ispisati poruku da je dobivena poruka o alarmu
     class SlušateljAlarma
     {

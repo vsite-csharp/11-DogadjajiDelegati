@@ -38,7 +38,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             return niz.Select(x => x.ToUpper());
         }
 
-        // TODO:053 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
+        // :053 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
 
         static void Main(string[] args)
         {
