@@ -25,9 +25,13 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static void IspisFunkcijeSinus()
         {
-            // TODO:020 Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Sin za 10 točaka u intervalu od 0 do Math.PI.
+            // 020 Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Sin za 10 točaka u intervalu od 0 do Math.PI.
+            IspišiFunkciju(Math.Sin, 0, Math.PI, 10); //funkcija math.sin potpisom odgovara delegatu Funkcija
+            //drugi nacin ekpsilicitno definiranje delegata:
+            //Funkcija f = Math.Sin;
+            //IspišiFunkciju(f, 0, Math.PI, 10);
 
-            // TODO:021 Pokrenuti program i provjeriti ispis.
+            // 021 Pokrenuti program i provjeriti ispis.
         }
 
         public static void IspisFunkcijeE()
