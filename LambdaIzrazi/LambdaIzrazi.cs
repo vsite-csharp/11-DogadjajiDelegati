@@ -29,20 +29,20 @@ namespace Vsite.CSharp.DogađajiDelegati
         // 051 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz kvadrata članova zadanog niza.
         public static IEnumerable<double> KvadrirajČlanoveNiza(IEnumerable<double> niz)
         {
-            return PrimijeniOperaciju(niz, x => x*x);
-            //return niz.Select(x => x*x);
+            //return PrimijeniOperaciju(niz, x => x*x);
+            return niz.Select(x => x*x);
             //return niz;
         }
 
         // 052 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz riječi iz zadanog niza sa svim velikim slovima.
         public static IEnumerable<string> Kapitaliziraj(IEnumerable<string> niz)
         {
-            return PrimijeniOperaciju(niz, s => s.ToUpper());
-            //return niz.Select(x => x * x);
+            //return PrimijeniOperaciju(niz, s => s.ToUpper());
+            return niz.Select(s => s.ToUpper());
             //return niz;
         }
 
-        // TODO:053 Pozive metode PrimijeniOperaciju u gornjim metodama zamijenite pozivima metode proširenja IEnumerable<T>.Select.
+        // 053 Pozive metode PrimijeniOperaciju u gornjim metodama zamijenite pozivima metode proširenja IEnumerable<T>.Select.
 
         // 054 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
 
