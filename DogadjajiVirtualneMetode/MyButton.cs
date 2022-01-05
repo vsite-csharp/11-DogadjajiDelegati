@@ -11,8 +11,9 @@ namespace Vsite.CSharp.DogađajiDelegati
     {
         protected override void OnClick(EventArgs e)
         {
-            MessageBox.Show("U overrideanoj metodi");
             //base.OnClick(e);
+            MessageBox.Show("Nadglasana metoda OnClick!", "My Button");
         }
+
     }
 }
