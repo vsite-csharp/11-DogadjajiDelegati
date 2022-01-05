@@ -46,12 +46,13 @@ namespace CurenjeMemorijeZbogNeodjave
             {
                 SlušateljDogađaja sd = new SlušateljDogađaja();
 
-                // TODO:070 Pokrenuti kod i provjeriti ispis na konzolu.
+                // 070 Pokrenuti kod i provjeriti ispis na konzolu.
 
-                // TODO:071 Dodati naredbu kojom se objekt sd predbilježi na slušanje događaja, pokrenuti kod i provjeriti ispis.
+                // 071 Dodati naredbu kojom se objekt sd predbilježi na slušanje događaja, pokrenuti kod i provjeriti ispis.
+                gd.Događaj += sd.DogađajEventHandler;
 
-                // TODO:072 Dodati naredbu kojom se objekt sd odjavljuje od slušanja događaja, pokrenuti kod i provjeriti ispis.
-
+                // 072 Dodati naredbu kojom se objekt sd odjavljuje od slušanja događaja, pokrenuti kod i provjeriti ispis.
+                gd.Događaj -= sd.DogađajEventHandler;
             }
 
             Console.WriteLine($"Zauzeta memorija na heapu: {GC.GetTotalMemory(true) / 1024.0} kB");
