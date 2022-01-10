@@ -33,13 +33,13 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static void IspisFunkcijeE()
         {
-            // TODO:022 Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Exp za 5 točaka u intervalu od 0 do 10.
+            // :022 Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Exp za 5 točaka u intervalu od 0 do 10.
             // za dz
-            //IspišiFunkciju(Math.Sin, 0, Math.PI, 10);
-            // TODO:023 Pokrenuti program i provjeriti ispis
+            IspišiFunkciju(Math.Exp, 0, 10, 5);
+            // :023 Pokrenuti program i provjeriti ispis
         }
 
-        // TODO:024 Pokrenuti i provjeriti testove (2 testa u grupi "ProsljeđivanjaDelegata" moraju proći).
+        // :024 Pokrenuti i provjeriti testove (2 testa u grupi "ProsljeđivanjaDelegata" moraju proći).
 
         static void Main(string[] args)
         {
