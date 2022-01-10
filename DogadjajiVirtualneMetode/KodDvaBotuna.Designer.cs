@@ -67,5 +67,6 @@
 
         private System.Windows.Forms.Button button;
         private System.Windows.Forms.Button buttonMy;
+        
     }
 }
