@@ -11,11 +11,11 @@ namespace Vsite.CSharp.DogađajiDelegati
 
     public class AlarmEventArgs : EventArgs
     {
-        public AlarmEventArgs(string mjesto, int razina, string opis)
+        AlarmEventArgs(string mjesto, int razina, string opis)
         {
             Mjesto = mjesto;
             Razina = razina;
-            Opis = opis;
+            Opis=opis;
             
         }
         public readonly DateTime Vrijeme = DateTime.Now;
