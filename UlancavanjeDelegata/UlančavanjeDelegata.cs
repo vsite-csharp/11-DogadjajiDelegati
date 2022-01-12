@@ -30,7 +30,7 @@ namespace Vsite.CSharp.DogađajiDelegati
 
             //:030 Pokrenuti program i pogledati sadržaj datoteke "poruke.txt" (u potkazalu bin\Debug).
 
-            // TODO:031 Dodajte delegatu metodu IspišiNaKonzolu.
+            //:031 Dodajte delegatu metodu IspišiNaKonzolu.
             ispisPoruke += IspišiNaKonzolu;
             ispisPoruke(poruke[1]);
 
