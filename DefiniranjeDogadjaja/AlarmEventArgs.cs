@@ -11,7 +11,7 @@ namespace Vsite.CSharp.DogađajiDelegati
 
     public class AlarmEventArgs : EventArgs
     {
-        AlarmEventArgs(string mjesto, int razina, string opis)
+        public AlarmEventArgs(string mjesto, int razina, string opis)
         {
             Mjesto = mjesto;
             Razina = razina;
