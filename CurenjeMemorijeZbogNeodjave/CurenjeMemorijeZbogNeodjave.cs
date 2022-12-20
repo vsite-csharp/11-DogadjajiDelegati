@@ -56,7 +56,6 @@ namespace CurenjeMemorijeZbogNeodjave
 
             Console.WriteLine($"Zauzeta memorija na heapu: {GC.GetTotalMemory(true) / 1024.0} kB");
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

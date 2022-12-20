@@ -71,7 +71,6 @@ namespace Vsite.CSharp.DogađajiDelegati
             PozivStatičkeIDvijeMetodeInstancePrekoDelegata();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

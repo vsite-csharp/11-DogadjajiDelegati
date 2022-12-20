@@ -18,6 +18,7 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
         [TestMethod]
         public void KadaSeUTekstKontroluUpišeTekstTipkaDeleteJeOmogućena()
         {
+            forma.textBox.Clear();
             forma.textBox.Text = "Neki tekst";
             Assert.IsTrue(forma.buttonDelete.Enabled);
             forma.textBox.Text = "";
@@ -27,8 +28,6 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
         [TestMethod]
         public void KadaUTekstKontroliNemaTekstaTipkaDeleteJeOnemogućena()
         {
-            forma.textBox.Text = "";
-            Assert.IsFalse(forma.buttonDelete.Enabled);
             forma.textBox.Text = "Neki tekst";
             Assert.IsTrue(forma.buttonDelete.Enabled);
             forma.textBox.Clear();

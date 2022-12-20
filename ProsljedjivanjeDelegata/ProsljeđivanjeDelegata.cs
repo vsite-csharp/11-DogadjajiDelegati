@@ -48,7 +48,6 @@ namespace Vsite.CSharp.DogađajiDelegati
             IspisFunkcijeE();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

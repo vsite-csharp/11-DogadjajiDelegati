@@ -12,7 +12,7 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
         {
             public void ObradaDogađaja(object sender, AlarmEventArgs a)
             {
-                GeneratorAlarma ga = sender as GeneratorAlarma;
+                GeneratorAlarma? ga = sender as GeneratorAlarma;
                 if (ga != null)
                     DogađajSeDogodio = true;
 
@@ -22,25 +22,25 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
                     var fields = t.GetFields();
                     var v = fields.FirstOrDefault(p => string.Compare(p.Name, "Vrijeme", true) == 0);
                     if (v != null)
-                        Vrijeme = (DateTime)v.GetValue(a);
+                        Vrijeme = (DateTime?)v.GetValue(a);
                     var m = fields.FirstOrDefault(p => string.Compare(p.Name, "Mjesto", true) == 0);
                     if (m != null)
-                        Mjesto = (string)m.GetValue(a);
+                        Mjesto = (string?)m.GetValue(a);
                     var r = fields.FirstOrDefault(p => string.Compare(p.Name, "Razina", true) == 0);
                     if (r != null)
-                        Razina = (int)r.GetValue(a);
+                        Razina = (int?)r.GetValue(a);
                     var o = fields.FirstOrDefault(p => string.Compare(p.Name, "Opis", true) == 0);
                     if (o != null)
-                        Opis = (string)o.GetValue(a);
+                        Opis = (string?)o.GetValue(a);
                 }
             }
 
             public bool DogađajSeDogodio { get; private set; }
 
-            public DateTime Vrijeme { get; private set; }
-            public string Mjesto { get; private set; }
-            public int Razina { get; private set; }
-            public string Opis { get; private set; }
+            public DateTime? Vrijeme { get; private set; }
+            public string? Mjesto { get; private set; }
+            public int? Razina { get; private set; }
+            public string? Opis { get; private set; }
         }
 
         [TestMethod]
@@ -51,12 +51,13 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
             GeneratorAlarma generatorAlarma = new GeneratorAlarma();
             Slušatelj slušatelj = new Slušatelj();
 
-            EventInfo eInfo = generatorAlarma.GetType().GetEvent("Alarm");
+            EventInfo? eInfo = generatorAlarma.GetType().GetEvent("Alarm");
             Assert.IsNotNull(eInfo);
             if (eInfo == null)
                 return;
 
-            Type handlerType = eInfo.EventHandlerType;
+            Type? handlerType = eInfo.EventHandlerType;
+            Assert.IsNotNull(handlerType);
             Delegate del = Delegate.CreateDelegate(handlerType, slušatelj, "ObradaDogađaja", false);
             eInfo.AddEventHandler(generatorAlarma, del);
 
@@ -75,12 +76,13 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
             GeneratorAlarma generatorAlarma = new GeneratorAlarma();
             Slušatelj slušatelj = new Slušatelj();
 
-            EventInfo eInfo = generatorAlarma.GetType().GetEvent("Alarm");
+            EventInfo? eInfo = generatorAlarma.GetType().GetEvent("Alarm");
             Assert.IsNotNull(eInfo);
             if (eInfo == null)
                 return;
 
-            Type handlerType = eInfo.EventHandlerType;
+            Type? handlerType = eInfo.EventHandlerType;
+            Assert.IsNotNull(handlerType);
             Delegate del = Delegate.CreateDelegate(handlerType, slušatelj, "ObradaDogađaja", false);
             eInfo.AddEventHandler(generatorAlarma, del);
 
@@ -99,12 +101,13 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
             GeneratorAlarma generatorAlarma = new GeneratorAlarma();
             Slušatelj slušatelj = new Slušatelj();
 
-            EventInfo eInfo = generatorAlarma.GetType().GetEvent("Alarm");
+            EventInfo? eInfo = generatorAlarma.GetType().GetEvent("Alarm");
             Assert.IsNotNull(eInfo);
             if (eInfo == null)
                 return;
 
-            Type handlerType = eInfo.EventHandlerType;
+            Type? handlerType = eInfo.EventHandlerType;
+            Assert.IsNotNull(handlerType);
             Delegate del = Delegate.CreateDelegate(handlerType, slušatelj, "ObradaDogađaja", false);
             eInfo.AddEventHandler(generatorAlarma, del);
 
@@ -121,12 +124,13 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
             GeneratorAlarma generatorAlarma = new GeneratorAlarma();
             Slušatelj slušatelj = new Slušatelj();
 
-            EventInfo eInfo = generatorAlarma.GetType().GetEvent("Alarm");
+            EventInfo? eInfo = generatorAlarma.GetType().GetEvent("Alarm");
             Assert.IsNotNull(eInfo);
             if (eInfo == null)
                 return;
 
-            Type handlerType = eInfo.EventHandlerType;
+            Type? handlerType = eInfo.EventHandlerType;
+            Assert.IsNotNull(handlerType);
             Delegate del = Delegate.CreateDelegate(handlerType, slušatelj, "ObradaDogađaja", false);
             eInfo.AddEventHandler(generatorAlarma, del);
 
@@ -143,12 +147,13 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
             GeneratorAlarma generatorAlarma = new GeneratorAlarma();
             Slušatelj slušatelj = new Slušatelj();
 
-            EventInfo eInfo = generatorAlarma.GetType().GetEvent("Alarm");
+            EventInfo? eInfo = generatorAlarma.GetType().GetEvent("Alarm");
             Assert.IsNotNull(eInfo);
             if (eInfo == null)
                 return;
 
-            Type handlerType = eInfo.EventHandlerType;
+            Type? handlerType = eInfo.EventHandlerType;
+            Assert.IsNotNull(handlerType);
             Delegate del = Delegate.CreateDelegate(handlerType, slušatelj, "ObradaDogađaja", false);
             eInfo.AddEventHandler(generatorAlarma, del);
 

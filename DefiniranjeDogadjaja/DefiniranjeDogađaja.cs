@@ -45,7 +45,6 @@ namespace Vsite.CSharp.DogađajiDelegati
             ga.DižiAlarm("hodnik", 1, "mačka");
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

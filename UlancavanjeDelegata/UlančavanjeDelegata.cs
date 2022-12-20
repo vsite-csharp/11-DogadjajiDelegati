@@ -56,7 +56,6 @@ namespace Vsite.CSharp.DogađajiDelegati
             IspisPoruka("Dobar dan", "Bok", "Guten Tag");
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

@@ -12,9 +12,9 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
         public void UlančavanjeNaKonzoluDajeIspisSamoDrugogITrećegTekstaTektsa()
         {
             DogađajiDelegati.UlančavanjeDelegata.IspisPoruka("Janko", "Marko", "Pero");
-            Assert.AreEqual(2, cw.Count);
-            Assert.AreEqual("Marko", cw.GetString());
-            Assert.AreEqual("Pero", cw.GetString());
+            Assert.AreEqual(2, cw?.Count);
+            Assert.AreEqual("Marko", cw?.GetString());
+            Assert.AreEqual("Pero", cw?.GetString());
         }
 
         [TestMethod]
@@ -23,9 +23,9 @@ namespace Vsite.CSharp.DogađajiDelegati.Testovi
             StringBuilder sb = new StringBuilder();
             DogađajiDelegati.UlančavanjeDelegata.writer = new StringWriter(sb);
             DogađajiDelegati.UlančavanjeDelegata.IspisPoruka("Janko", "Marko", "Pero");
-            Assert.AreEqual(2, cw.Count);
-            Assert.AreEqual("Marko", cw.GetString());
-            Assert.AreEqual("Pero", cw.GetString());
+            Assert.AreEqual(2, cw?.Count);
+            Assert.AreEqual("Marko", cw?.GetString());
+            Assert.AreEqual("Pero", cw?.GetString());
 
             string[] učitaniReci = sb.ToString().Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
             Assert.AreEqual(2, učitaniReci.Length);

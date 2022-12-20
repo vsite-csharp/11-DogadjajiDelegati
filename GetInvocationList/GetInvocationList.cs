@@ -45,7 +45,6 @@ namespace Vsite.CSharp.DogađajiDelegati
             IspišiFunkcijeZasebno(f, 0, Math.PI, 10);
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
     }
 }
