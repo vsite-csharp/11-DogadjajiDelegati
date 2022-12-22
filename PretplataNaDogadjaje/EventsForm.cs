@@ -44,9 +44,9 @@ namespace Vsite.CSharp.DogađajiDelegati
 
     // :005 Pokrenuti program i provjeriti funkcionalnost tipke.
 
-    // TODO:006 Dodati metodu za obradu događaja koja će biti pozvana pri pritisku na tipku buttonClose i koja će zatvoriti formu.
+    // :006 Dodati metodu za obradu događaja koja će biti pozvana pri pritisku na tipku buttonClose i koja će zatvoriti formu.
 
-    // TODO:007 Pokrenuti program i provjeriti funkcionalnost tipke.
+    // :007 Pokrenuti program i provjeriti funkcionalnost tipke.
 
-    // TODO:008 Pokrenuti i provjeriti testove (4 testa u grupi "PretplataNaDogađaje" moraju proći).
+    // :008 Pokrenuti i provjeriti testove (4 testa u grupi "PretplataNaDogađaje" moraju proći).
 }
