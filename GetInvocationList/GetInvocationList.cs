@@ -25,7 +25,10 @@ namespace Vsite.CSharp.DogađajiDelegati
         public static void IspišiFunkcijeZasebno(Funkcija fja, double x1, double x2, int n)
         {
             // TODO:042 Pomoću metode GetInvocationList dohvatiti sve delegatske funkcije zasebno i za svaku ispisati vrijednosti u traženom intervalu.
-
+            foreach (Funkcija f in fja.GetInvocationList())
+            {
+                IspišiFunkciju(f,x1,x2,n);
+            }
             // TODO:043 Pokrenuti program i provjeriti ispis.
         }
 
@@ -35,8 +38,8 @@ namespace Vsite.CSharp.DogađajiDelegati
         {
             // TODO:040 Pokrenuti program i provjeriti ispis.
             Funkcija f = Math.Cos;
-            // TODO:041 Otkomentirati donju naredbu i ponovno pokrenuti program te provjeriti ispis.
-            //f += Math.Sin;
+            // Otkomentirati donju naredbu i ponovno pokrenuti program te provjeriti ispis.
+            f += Math.Sin;
 
             Console.WriteLine("*** IspišiFunkcijeUPaketu ***");
             IspišiFunkciju(f, 0, Math.PI, 10);
