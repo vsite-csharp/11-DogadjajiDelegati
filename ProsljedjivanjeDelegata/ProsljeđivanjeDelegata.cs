@@ -33,10 +33,10 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         public static void IspisFunkcijeE()
         {
-            // TODO:022 Pozvati metodu IspišiFunkciju tako da ispiše vrijednosti funkcije Math.Exp za 5 točaka u intervalu od 0 do 10.
             Funkcija fun = Math.Exp;
-            IspišiFunkciju(fun, 0, 2, 10);
-            // TODO:023 Pokrenuti program i provjeriti ispis
+
+            // Call the IspišiFunkciju method, passing in the delegate and the range of x values to use
+            IspišiFunkciju(fun, 0, 10,5);
         }
 
         // TODO:024 Pokrenuti i provjeriti testove (2 testa u grupi "ProsljeđivanjaDelegata" moraju proći).

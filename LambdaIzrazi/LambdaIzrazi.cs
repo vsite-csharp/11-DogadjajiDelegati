@@ -19,19 +19,23 @@ namespace Vsite.CSharp.DogađajiDelegati
         // TODO:050 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz korijenovanih članova zadanog niza.
         public static IEnumerable<double> KorijenujČlanoveNiza(IEnumerable<double> niz)
         {
-            return niz;
+            return niz.Select(s => Math.Sqrt(s));
         }
 
         // TODO:051 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz kvadrata članova zadanog niza.
         public static IEnumerable<double> KvadrirajČlanoveNiza(IEnumerable<double> niz)
         {
-            return niz;
+            
+
+            return niz.Select(s => Math.Pow(s, 2));
         }
 
         // TODO:052 U donjoj metodi pozvati metodu PrimijeniOperaciju tako da vrati niz riječi iz zadanog niza sa svim velikim slovima.
         public static IEnumerable<string> Kapitaliziraj(IEnumerable<string> niz)
         {
-            return niz;
+            
+
+            return niz.Select(s => s.ToUpper());
         }
 
         // TODO:053 Pozive metode PrimijeniOperaciju u gornjim metodama zamijenite pozivima metode proširenja IEnumerable<T>.Select.

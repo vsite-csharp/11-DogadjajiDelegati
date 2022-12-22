@@ -24,7 +24,7 @@ namespace Vsite.CSharp.DogađajiDelegati
 
             SlušateljAlarma sa = new SlušateljAlarma();
             // TODO:063a Otkomentirati donju naredbu tako da se slušatelj može predbilježiti na događaj Alarm. Pokrenuti program i pogledati ispis.
-            //ga.Alarm += sa.AlarmNotifikacija;
+            ga.Alarm += sa.AlarmNotifikacija;
 
             Console.WriteLine("Slušatelj se prijavio na slušanje alarma");
             Console.WriteLine("Kada stisnemo tipku dići će se alarm i obavijestiti pretplaćene slušatelje");
