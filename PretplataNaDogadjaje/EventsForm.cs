@@ -50,3 +50,4 @@ namespace Vsite.CSharp.DogađajiDelegati
 
     //008 Pokrenuti i provjeriti testove (4 testa u grupi "PretplataNaDogađaje" moraju proći).
 }
+ 
