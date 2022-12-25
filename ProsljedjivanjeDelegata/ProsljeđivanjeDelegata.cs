@@ -39,7 +39,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             // :023 Pokrenuti program i provjeriti ispis
         }
 
-        // TODO:024 Pokrenuti i provjeriti testove (2 testa u grupi "ProsljeđivanjaDelegata" moraju proći).
+        // :024 Pokrenuti i provjeriti testove (2 testa u grupi "ProsljeđivanjaDelegata" moraju proći).
 
         static void Main(string[] args)
         {
