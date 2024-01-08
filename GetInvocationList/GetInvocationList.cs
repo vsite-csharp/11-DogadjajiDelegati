@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Vsite.CSharp.DogađajiDelegati
+﻿namespace Vsite.CSharp.DogađajiDelegati
 {
     // primjer poziva delegata preko GetInvocationList
 
-    class GetInvocationList
+    internal class GetInvocationList
     {
         public delegate double Funkcija(double x);
 
@@ -31,7 +26,7 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         // TODO:044 Pokrenuti i provjeriti testove (test u grupi "GetInvocationList" mora proći).
 
-        static void Main(string[] args)
+        static void Main()
         {
             // TODO:040 Pokrenuti program i provjeriti ispis.
             Funkcija f = Math.Cos;

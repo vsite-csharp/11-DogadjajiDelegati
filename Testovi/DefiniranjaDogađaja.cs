@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Linq;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace Vsite.CSharp.DogađajiDelegati.Testovi
 {

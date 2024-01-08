@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 
 namespace Vsite.CSharp.DogađajiDelegati
 {
-    class DefiniranjeDogađaja
+    internal static class DefiniranjeDogađaja
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.OutputEncoding = Encoding.UTF8; // osigurava ispis naših znakova čžš
 

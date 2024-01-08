@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
-
-namespace Vsite.CSharp.DogađajiDelegati
+﻿namespace Vsite.CSharp.DogađajiDelegati
 {
     class UlančavanjeDelegata
     {
@@ -44,14 +38,16 @@ namespace Vsite.CSharp.DogađajiDelegati
         static UlančavanjeDelegata()
         {
             if (File.Exists("poruke.txt"))
+            {
                 File.Delete("poruke.txt");
+            }
             writer = new StreamWriter(new FileStream("poruke.txt", FileMode.Append, FileAccess.Write));
         }
 
         public static TextWriter writer;
 
         // TODO:034 Pokrenite i provjerite testove (dva testa u grupi "UlančavanjaDelegata" moraju proći)
-        static void Main(string[] args)
+        static void Main()
         {
             IspisPoruka("Dobar dan", "Bok", "Guten Tag");
 

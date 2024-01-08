@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace CurenjeMemorijeZbogNeodjave
+﻿namespace CurenjeMemorijeZbogNeodjave
 {
     class Program
     {
@@ -38,7 +33,7 @@ namespace CurenjeMemorijeZbogNeodjave
         }
 
 
-        static void Main(string[] args)
+        static void Main()
         {
             GeneratorDogadjaja gd = new GeneratorDogadjaja();
 

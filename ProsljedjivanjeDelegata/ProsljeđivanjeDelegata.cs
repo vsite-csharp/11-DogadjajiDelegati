@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Vsite.CSharp.DogađajiDelegati
+﻿namespace Vsite.CSharp.DogađajiDelegati
 {
     // primjer programa s delegatima
-    class ProsljeđivanjeDelegata
+    internal class ProsljeđivanjeDelegata
     {
         // definicija delegata
         delegate double Funkcija(double x);
@@ -39,7 +34,7 @@ namespace Vsite.CSharp.DogađajiDelegati
 
         // TODO:024 Pokrenuti i provjeriti testove (2 testa u grupi "ProsljeđivanjaDelegata" moraju proći).
 
-        static void Main(string[] args)
+        static void Main()
         {
             IspisFunkcijeSinus();
 

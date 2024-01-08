@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Vsite.CSharp.DogađajiDelegati.Testovi
+﻿namespace Vsite.CSharp.DogađajiDelegati.Testovi
 {
     [TestClass]
     public class PretplataNaDogađaje

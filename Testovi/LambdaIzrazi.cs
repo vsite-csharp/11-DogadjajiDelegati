@@ -1,8 +1,4 @@
-﻿using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-
-namespace Vsite.CSharp.DogađajiDelegati.Testovi
+﻿namespace Vsite.CSharp.DogađajiDelegati.Testovi
 {
     [TestClass]
     public class LambdaIzrazi

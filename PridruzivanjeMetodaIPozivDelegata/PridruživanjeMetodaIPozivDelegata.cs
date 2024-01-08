@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Vsite.CSharp.DogađajiDelegati
+﻿namespace Vsite.CSharp.DogađajiDelegati
 {
-    class PridruživanjeMetodaIPozivDelegata
+    internal class PridruživanjeMetodaIPozivDelegata
     {
         // definicija delegata
         delegate void MojDelegat();
@@ -58,7 +52,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             // TODO:018 Pokrenuti i provjeriti testove (3 testa u grupi "DelegatskeMetode" moraju proći).
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             PozivStatičkeMetodePrekoDelegata();
 
