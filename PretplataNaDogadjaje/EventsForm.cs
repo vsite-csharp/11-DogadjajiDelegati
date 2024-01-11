@@ -5,6 +5,24 @@
         public EventsForm()
         {
             InitializeComponent();
+            textBox.TextChanged += TextBox_TextChanged;
+        }
+
+        private void TextBox_TextChanged(object? sender, EventArgs e)
+        {
+            buttonDelete.Enabled = textBox.TextLength > 0;
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            //textBox.Text = String.Empty;
+            textBox.Clear();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            //Application.Exit();
+            Close();
         }
     }
 
