@@ -42,9 +42,9 @@
             return niz.Select(x => x.ToUpper());
         }
 
-        // TODO:053 Pozive metode PrimijeniOperaciju u gornjim metodama zamijenite pozivima metode proširenja IEnumerable<T>.Select.
+        // :053 Pozive metode PrimijeniOperaciju u gornjim metodama zamijenite pozivima metode proširenja IEnumerable<T>.Select.
 
-        // TODO:054 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
+        // :054 Pokrenuti i provjeriti testove (3 testa u grupi "LambdaIzrazi" moraju proći).
 
         static void Main()
         {
