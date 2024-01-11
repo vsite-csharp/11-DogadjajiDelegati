@@ -4,7 +4,10 @@
     // Unutar te metode na konzolu ispisati poruku da je dobivena poruka o alarmu
     internal class SlušateljAlarma
     {
-
+        public void AlarmNotifikacija(object? sender, AlarmEventArgs e)
+        {
+            Console.WriteLine($"Vrijeme:{e.Vrijeme}, Mjesto:{e.Mjesto}, Razina:{e.Razina}, Opis:{e.Opis}");
+        }
         // TODO:068 Modificirati metodu AlarmNotifikacija tako da ispiše sve podatke o alarmu (vrijeme, mjesto, razinu i opis). Pokrenuti program i provjeriti ispis.
     }
 
