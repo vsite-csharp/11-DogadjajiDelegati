@@ -22,15 +22,15 @@
 
             ispisPoruke(poruke[0]);
 
-            // TODO:030 Pokrenuti program i pogledati sadržaj datoteke "poruke.txt" (u potkazalu bin\Debug).
-
-            // TODO:031 Dodajte delegatu metodu IspišiNaKonzolu.
+            // Pokrenuti program i pogledati sadržaj datoteke "poruke.txt" (u potkazalu bin\Debug).
+            ispisPoruke += IspišiNaKonzolu;
+            // Dodajte delegatu metodu IspišiNaKonzolu.
 
             ispisPoruke(poruke[1]);
 
-            // TODO:032 Pokrenite program i usporedite prikaz na konzoli sa sadržajem datoteke "poruke.txt".
-
-            // TODO:033 Iz delegata uklonite IspišiUFajl, pokrenite program i provjerite sadržaj datoteke "poruke.txt".
+            // Pokrenite program i usporedite prikaz na konzoli sa sadržajem datoteke "poruke.txt".
+            ispisPoruke -= IspišiUFajl;
+            // Iz delegata uklonite IspišiUFajl, pokrenite program i provjerite sadržaj datoteke "poruke.txt".
 
             ispisPoruke(poruke[2]);
         }
