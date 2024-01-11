@@ -44,17 +44,17 @@
 
         public static void PozivStatičkeIDvijeMetodeInstancePrekoDelegata()
         {
-            // TODO:014 Instancirati delegata tipa MojDelegat metodom MetodaInstance. 
+            // Instancirati delegata tipa MojDelegat metodom MetodaInstance. 
             var instanca = new PridruživanjeMetodaIPozivDelegata();
             MojDelegat md = instanca.MetodaInstance;
 
 
-            // TODO:015 Delegatu dodati metodu StatičkaMetoda i metodu DrugaMetodaInstance te pozvati delegata.
+            // Delegatu dodati metodu StatičkaMetoda i metodu DrugaMetodaInstance te pozvati delegata.
             md = StatičkaMetoda;
             md += instanca.DrugaMetodaInstance;
             md();
             // TODO:016 Pokrenuti program i provjeriti ispis.
-            // md += DrugaStatičkaMetoda;
+            
             // TODO:017 Delegatu prije poziva pridružiti metodu DrugaStatičkaMetoda. Pogledati što se događa.
 
             // TODO:018 Pokrenuti i provjeriti testove (3 testa u grupi "DelegatskeMetode" moraju proći).
