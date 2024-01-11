@@ -32,7 +32,7 @@ namespace Vsite.CSharp.DogađajiDelegati
             Console.WriteLine("Slušatelj će se odjaviti nakon što stisnemo tipku");
             Console.ReadKey(true);
 
-            // TODO:063b Otkomentirati donju naredbu tako da se slušatelj može odjaviti od događaja Alarm. Pokrenuti program i pogledati ispis.
+            // Otkomentirati donju naredbu tako da se slušatelj može odjaviti od događaja Alarm. Pokrenuti program i pogledati ispis.
             ga.Alarm -= sa.AlarmNotifikacija;
 
             Console.WriteLine("Slušatelj se odjavio");
