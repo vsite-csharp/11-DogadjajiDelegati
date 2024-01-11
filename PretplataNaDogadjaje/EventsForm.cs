@@ -5,16 +5,38 @@
         public EventsForm()
         {
             InitializeComponent();
+            textBox.TextChanged += TextBox_TextChanged;
+        }
+
+        private void TextBox_TextChanged(object? sender, EventArgs e)
+        {
+            buttonDelete.Enabled = textBox.TextLength > 0;
+        }
+
+        private void textBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDelete_Click(object sender, EventArgs e)
+        {
+            textBox.Clear();
+        }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 
-    // TODO:000 Pokrenuti program i pogledati koje kontrole se nalaze na glavnoj formi.
 
-    // TODO:001 Dodati metodu za obradu događaja (event handler) koja će biti pozvana kada se promijeni sadržaj textBox kontrole (na događaj TextChanged).
-    // TODO:002 Unutar metode treba onemogućiti tipku buttonDelete ako nema upisanog teksta u kontroli textBox, odnosno omogućiti ju kada je neki tekst upisan.
-    // TODO:003 Pokrenuti program i provjeriti ponašanje tipke.
+    // 000 Pokrenuti program i pogledati koje kontrole se nalaze na glavnoj formi.
 
-    // TODO:004 Dodati metodu za obradu događaja koja će biti pozvana pri pritisku na tipku buttonDelete (događaj Click) i koja će obrisati sadržaj kontrole textBox.
+    // 001 Dodati metodu za obradu događaja (event handler) koja će biti pozvana kada se promijeni sadržaj textBox kontrole (na događaj TextChanged).
+    // 002 Unutar metode treba onemogućiti tipku buttonDelete ako nema upisanog teksta u kontroli textBox, odnosno omogućiti ju kada je neki tekst upisan.
+    // 003 Pokrenuti program i provjeriti ponašanje tipke.
+
+    // 004 Dodati metodu za obradu događaja koja će biti pozvana pri pritisku na tipku buttonDelete (događaj Click) i koja će obrisati sadržaj kontrole textBox.
 
     // TODO:005 Pokrenuti program i provjeriti funkcionalnost tipke.
 
