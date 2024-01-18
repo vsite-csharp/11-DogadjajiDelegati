@@ -9,6 +9,7 @@
         public delegate void AlarmEventHandler(object? sender, AlarmEventArgs args);
         public event AlarmEventHandler Alarm;
 
+
         protected virtual void OnAlarm(AlarmEventArgs e)
         {
             Alarm?.Invoke(this, e); // ili Alarm(this, e);
